@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
-import "./globals.css";
 import React from "react";
 import { ThemeProvider } from "@/app/context/themeProvider";
 
