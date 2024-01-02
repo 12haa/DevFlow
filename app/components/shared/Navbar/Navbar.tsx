@@ -5,6 +5,7 @@ import { UserButton } from "@clerk/nextjs";
 import { SignedIn } from "@clerk/nextjs";
 import Theme from "@/app/components/shared/Navbar/Theme";
 import MobileNav from "@/app/components/shared/Navbar/MobileNav";
+import GlobalSearch from "@/app/components/shared/Search/GlobalSearch";
 
 const Navbar = () => {
   return (
@@ -20,7 +21,7 @@ const Navbar = () => {
           Dev<span className="text-primary-500">Flow</span>
         </p>
       </Link>
-      Globalsearch
+      <GlobalSearch />
       <div className="flex items-center gap-4">
         <Theme />
         <SignedIn>

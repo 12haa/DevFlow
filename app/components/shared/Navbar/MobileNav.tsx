@@ -25,7 +25,7 @@ const NavContent = () => {
           (pathname.includes(link.route) && link.route.length > 1) ||
           pathname === link.route;
         return (
-          <SheetClose asChild key={link.route}>
+          <SheetClose asChild key={link.route} className="p-6">
             <Link
               key={link.route}
               href={link.route}
@@ -33,7 +33,7 @@ const NavContent = () => {
                 isActive
                   ? "primary-gradient rounded-lg text-light-900"
                   : "text-dark300_light900"
-              }flex items-center justify-start gap-4 bg-transparent `}
+              } flex items-center justify-start gap-4 bg-transparent `}
             >
               <Image
                 src={link.imgURL}
